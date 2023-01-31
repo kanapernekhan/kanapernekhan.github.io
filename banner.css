@@ -1,0 +1,156 @@
+.banner {
+    background-image:
+    url(https://media.istockphoto.com/id/1283095709/vector/space-background-wide-realistic-cosmos-with-shining-stars-long-banner-with-starry-milky-way.jpg?s=170667a&w=0&k=20&c=K10x0RvgScFWpzNaDBjjYy0GjPeZMCybr_4FsC1PSpg=);
+    padding:90px;
+    text-align: center;
+    font-size: 40px;
+    color: #A0AFDF;
+  }
+.logo {
+    content: url('https://elements-cover-images-0.imgix.net/36cd7901-883a-426e-8c10-b814eacfcb5f?auto=compress%2Cformat&fit=max&w=900&s=68ed08ce970521beeeeee238f2877695');
+    
+    width: 80px;
+    height: 80px;
+    background: #52206F;
+    border-radius: 5px;
+    margin: 10px;
+    float: center;
+    padding:10px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#663366; 
+}
+.menu { 
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+  font-size: auto;
+}
+
+.menu a {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+}
+
+.menu a:hover {
+background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #A757D5;
+  animation: spring 300ms ease-out;
+  text-shadow: 1px 1px 1px #000000;
+  font-weight: bold;
+}
+.menu active {
+  transform: translateY(4px);
+}
+td[id] {
+  font-style: italic;
+  font-size: auto;
+}
+#photo img {
+  display: flex;
+}
+.map iframe{
+  border: 2px solid black;
+  border-radius: 200px;
+}
+.contacts {
+  text-align: center;
+  font-weight:bold;
+}
+.categories{
+  text-align:flex;
+  margin:100px;
+  float: left;
+}
+.quick_links {
+  text-align: flex;
+  margin:100px;
+  float: right;
+}
+.categories ul{
+  display :inline-block;
+}
+.quick_links ul{
+  display :inline-block;
+}
+
+footer h5 {
+  font-size: 20px;
+}
+aside h3 {
+  text-align: center;
+  font-size:20px;
+}
+.main_content h2{
+  text-align: center;
+  font-size:20px;
+}
+#deadline h4{
+  color:red;
+}
+a:link {
+  color: deeppink;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: whitesmoke;
+}
+#main-heading {
+  text-align: center;
+            font-size: auto;
+            background: linear-gradient(to left,
+                    blueviolet,
+                    indigo,
+                    steelblue,
+                    darkseagreen,
+                    antiquewhite,
+                    purple,
+                    darkblue);
+            -webkit-background-clip:
+}
+#picture img {
+ display:flex;
+}
+#art1 {
+  font-size: auto;
+  font-style: oblique;
+  text-shadow: 1px 1px 2px black;
+}
+#art2 {
+  font-size: auto;
+  font-style: oblique;
+  color: #82589B;
+  text-shadow: 0px 5px 10px black;
+}
+#art3 {
+  font-size: auto;
+  font-style: oblique;
+  color: #C34DFD;
+  text-shadow: 0px 5px 10px blue;
+}
