@@ -14,10 +14,10 @@
     background: #52206F;
     border-radius: 5px;
     margin: 10px;
-    float: center;
     padding:10px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);    
     display: flex;
+    float:center;
     align-items: center;
     justify-content: center;
 }
@@ -31,10 +31,11 @@ body {
   width: 100%;
   height: 100%;
   margin: auto;
-  max-width: 1000px;
-  justify-content: space-between;
+  padding-bottom:10px;
   text-align: center;
   font-size: auto;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .menu a {
@@ -84,6 +85,10 @@ td[id] {
 }
 .categories ul{
   display :inline-block;
+}
+ul {
+  margin:0;
+  padding:0;
 }
 .quick_links ul{
   display :inline-block;
@@ -153,4 +158,82 @@ a:active {
   font-style: oblique;
   color: #C34DFD;
   text-shadow: 0px 5px 10px blue;
+}
+@media only screen and (max-width: 47.9em) {
+  .banner{
+    padding: 3.5em;
+    font-size: 1.5em;
+  }
+  .logo{
+    width: auto;
+    float:center;
+  }
+  .menu { 
+    display: block;
+    width:auto;
+    list-style-type:none;
+    font-size:1.5em;
+}
+  .categories{
+  margin:auto;
+  float: left;
+}
+  .quick_links {
+    margin:auto;
+}
+  .main_content img{
+    width: 100%;
+    height: 100%;
+  }
+  h1{
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+  }
+  h2,h3,h4{
+    font-size:auto;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  .quick_links h5{
+    font-size: 1.0em;
+  }
+  .categories h5{
+    font-size: 1.0em;
+  }
+}
+* {
+  margin:0;
+}
+@media only screen and (min-width: 48.0em) {
+  .banner{
+    width: auto;
+    height: auto;
+  }
+   a:link {
+  width: auto;
+  }
+
+  a:visited {
+     width: auto;
+  }
+  a:hover {
+     width: auto;
+  }
+  a:active {
+     width: auto;
+    }
+  h2,h3,h4,h5 {
+    font-size:auto;
+  }
+  #picture, #art1, #art2, #art3 {
+    width:auto;
+  }
+  .menu { 
+  width: 100%;
+
+  }
+  h1{
+      margin:auto;
+    }
 }
