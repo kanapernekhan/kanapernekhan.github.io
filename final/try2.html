@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="try2.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="try2.css">
+</head>
+
+<body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="scripts.js"></script>
+	<!-- Navbar menu -->
+	<header class="header">
+		<div class="container_nav">
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<div class="navbar-brand" href="#" style="font-family: 'Yerkanat', sans-serif;">CV</div>
+					<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="main-nav" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav" id="mainNav">
+						<li class="active"><a href="#home" class="scroll-link" id="home-link">Home</a></li>
+						<li><a href="#aboutMe" class="scroll-link">About Me</a></li>
+						<li><a href="#skills" class="scroll-link">Skills</a></li>
+						<li><a href="#hobbies" class="scroll-link">Hobbies</a></li>
+						<li><a href="page2.html" class="scroll-link">Portfolio</a></li>
+						<li><a href="#contactMe" class="scroll-link">Contact Me</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!--banner -->
+	<div id="#top"></div>
+	<section id="home">
+
+		<div class="banner-image">
+			<div class="container banner-content">
+				<h1>Yerkanat Pernekhan</h1>
+				<p class = "glower">I am a Senior of NU</p>
+			</div>
+		</div>
+	</section>
+	<section id="introText">
+		<div class="container">
+			<div class="text-center">
+				<h1>Hometown</h1>
+				<p>Almaty is a fascinating city with a unique blend of cultures and a rich history, offering a wide range of attractions for visitors to explore and enjoy.</p>
+			</div>
+		</div>
+	</section>
+	<!--About-->
+	<section id="aboutMe" class="secPad">
+		<div class="container_aboutMe">
+			<div class="heading text-center">
+				<h2>Hey, I am Kana and a purposeful, eager to learn new opportunities and new knowledge person.</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center tileBox">
+					<div class="txtHead"> <i class="fa fa-scissors"></i>
+						<h3>Barber</h3>
+					</div>
+					<p>Professional who provides grooming services for men, including haircuts, shaves, beard trimming, and facial hair styling.</p>
+				</div>
+				<div class="col-md-4 text-center tileBox">
+					<div class="txtHead"><i class="fa fa-steam"></i>
+						<h3>Steam</h3>
+					</div>
+
+					<p>Skilled and dedicated gamers who possesses both individual skill and teamwork abilities to achieve victory in the highly competitive and strategic game </p>
+				</div>
+				<div class="col-md-4 text-center tileBox">
+					<div class="txtHead">  <i class="fa fa-graduation-cap"></i>
+						<h3>Teacher, Freelance</h3>
+					</div>
+					<p>Taught mathematics and English. Prepared to "ЕНТ", "Nazarbayev University entrance exams", IELTS.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Quote -->
+	<section id="quote" class="bg-parlex">
+		<div class = "container_quote">
+			<div class="back-parlex">
+				<div class="container secPad text-center">
+					<h2>"You only live once, but if you do it right, once is enough." </h2><h3>-Mae West</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section id="skills" class="secPad white">
+		<div class="container">
+			<div class="text-center">
+				<h2>My Skills</h2>
+			</div>
+			<p>HTML</p>
+			<div class="container-skill">
+				<div class="skills html">95%</div>
+				<div class="bar html"><span></span></div>
+			</div>
+
+			<p>Python</p>
+			<div class="container-skill">
+				<div class="skills python">80%</div>
+				<div class="bar python"><span></span></div>
+			</div>
+
+			<p>C++</p>
+			<div class="container-skill">
+				<div class="skills C">70%</div>
+				<div class="bar C"><span></span></div>
+			</div>
+
+			<p>Communication</p>
+			<div class="container-skill">
+				<div class="skills Communication">100%</div>
+				<div class="bar Communication"><span></span></div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!--- Portfolio --->
+
+	<section id = "hobbies" class = "myhobbies">
+		<div class = "container_hobbies">
+			<h2>Hobbies</h2>
+			<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')">Show all</button>
+				<button class="btn" onclick="filterSelection('mount')"> Skiing/Snowbording</button>
+				<button class="btn" onclick="filterSelection('chess')"> Chess</button>
+				<button class="btn" onclick="filterSelection('games')"> Computer Games</button>
+			</div>
+			<div class="row">
+				<div class="column mount">
+					<div class="content">
+						<img src="skii1.jpeg" alt="mountain" style="width:100%">
+						<h4><b>Skiing</b></h4>
+						<p>I have been skiing since 8</p>
+					</div>
+				</div>
+				<div class="column mount">
+					<div class="content">
+						<img src="snow2.jpeg" alt="mountain" style="width:100%">
+						<h4><b>Snowboarding</b></h4>
+						<p>Two years ago I started boarding</p>
+					</div>
+				</div>  
+				<div class="column chess">
+					<div class="content">
+						<img src="chess1.jpeg" alt="board" style="width:100%">
+						<h4><b>Chess</b></h4>
+						<p>Playing sicne childhood</p>
+					</div>
+				</div>
+				<div class="column chess">
+					<div class="content">
+						<img src="chess2.png" alt="board" style="width:100%">
+						<h4><b>Chess</b></h4>
+						<p>I have a rank of Class A</p>
+					</div>
+				</div>
+				<div class="column games">
+					<div class="content">
+						<img src="dota2.jpeg" alt="CG" style="width:100%">
+						<h4><b>Dota 2</b></h4>
+						<p>I won different tournaments</p>
+					</div>
+				</div>
+				<div class="column games">
+					<div class="content">
+						<img src="csgo.jpeg" alt="CG" style="width:100%">
+						<h4><b>CS</b></h4>
+						<p>I was invited to pro team : NAVI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div id="contactMe" class="container-footer">
+			<div class="social text-center">
+				<a href="https://twitter.com/YerkanatP"><i class="fa fa-twitter default-color"></i></a>
+				<a href="https://web.whatsapp.com"><i class="fa fa-whatsapp default-color" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/profile.php?id=100008411140438"><i class="fa fa-facebook default-color"></i></a>
+				<a href="https://github.com/kanapernekhan"><i class="fa fa-github default-color"></i></a>
+				<h4 class="dm">Contact Me</h4>
+				<hr>
+				<form>
+					<fieldset class="form-group">
+						<textarea class="form-control" id="messageInput" placeholder="Message"></textarea>
+					</fieldset>
+					<fieldset class="form-group text-xs-right">
+						<button type="button" class="btn btn-secondary-outline btn-lg btn-send" id="sendBtn" onclick="sendEmail()">
+							<i class="fa fa-paper-plane" aria-hidden="true"></i>
+						</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</footer>
+</div>
+</div>
+</footer>
+<!-- page-section -->
+<section class="copyright">
+	<div class="container_page">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<p>Copyright 2023 | All Rights Reserved by <span style="color:red;">Kana</span></p>
+
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>
